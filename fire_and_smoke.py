@@ -8,9 +8,9 @@ bpy.ops.object.material_slot_add()
 bpy.ops.object.quick_smoke()
 
 bpy.context.object.modifiers["Smoke"].domain_settings.use_adaptive_domain = True
-bpy.context.object.scale[0] = 3
-bpy.context.object.scale[1] = 3
-bpy.context.object.scale[2] = 6
+bpy.context.object.scale[0] = bpy.context.object.scale[0] * 2
+bpy.context.object.scale[1] = bpy.context.object.scale[1] * 2
+bpy.context.object.scale[2] = bpy.context.object.scale[2] * 2
 
 bpy.data.objects[origin_obj].modifiers["Smoke"].flow_settings.smoke_flow_type = 'BOTH'
 bpy.context.scene.render.engine = "CYCLES"
