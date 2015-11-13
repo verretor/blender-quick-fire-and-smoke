@@ -2,7 +2,7 @@ import bpy
 
 origin_obj = bpy.context.object.name
 
-bpy.ops.object.shade_smooth()
+#bpy.ops.object.shade_smooth()
 bpy.ops.object.modifier_add(type='SMOKE')
 bpy.ops.object.material_slot_add()
 bpy.ops.object.quick_smoke()
